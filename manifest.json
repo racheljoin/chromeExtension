@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "插件名称",
+	"version": "1.1.2",
+	"description": "插件的描述",
+	"icons": {
+		"16": "img/appicon.png",
+		"32": "img/appicon.png",
+		"48": "img/appicon.png",
+		"128": "img/appicon.png"
+	},
+    "background": { 
+        "scripts": [ "background.js"],
+        "persistent": false 
+    },
+    "permissions": ["activeTab", "declarativeContent", "storage", "contextMenus"],
+    "page_action": { 
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "img/appicon.png",
+            "32": "img/appicon.png",
+            "48": "img/appicon.png",
+            "128": "img/appicon.png"
+        }
+    },
+    "options_page": "options.html"
+}
